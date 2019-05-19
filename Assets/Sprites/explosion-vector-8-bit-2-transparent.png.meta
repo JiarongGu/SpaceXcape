@@ -1,0 +1,1250 @@
+fileFormatVersion: 2
+guid: 48e15ef9190ff4f419edc5302287fb88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2755405062778115043
+    second: explosion-vector-8-bit-2-transparent_0
+  - first:
+      213: -4807882215885372462
+    second: explosion-vector-8-bit-2-transparent_1
+  - first:
+      213: -2819771148760499198
+    second: explosion-vector-8-bit-2-transparent_2
+  - first:
+      213: -1789327385831282281
+    second: explosion-vector-8-bit-2-transparent_3
+  - first:
+      213: -1184420468386053705
+    second: explosion-vector-8-bit-2-transparent_4
+  - first:
+      213: -3126747667575360278
+    second: explosion-vector-8-bit-2-transparent_5
+  - first:
+      213: -1954251399183230525
+    second: explosion-vector-8-bit-2-transparent_6
+  - first:
+      213: 8729703927213293443
+    second: explosion-vector-8-bit-2-transparent_7
+  - first:
+      213: -7936870771512358863
+    second: explosion-vector-8-bit-2-transparent_8
+  - first:
+      213: -4643049639561161841
+    second: explosion-vector-8-bit-2-transparent_9
+  - first:
+      213: -7197638356554402706
+    second: explosion-vector-8-bit-2-transparent_10
+  - first:
+      213: -3391010535194709873
+    second: explosion-vector-8-bit-2-transparent_11
+  - first:
+      213: 4609561770621944143
+    second: explosion-vector-8-bit-2-transparent_12
+  - first:
+      213: 2289893282601903599
+    second: explosion-vector-8-bit-2-transparent_13
+  - first:
+      213: 9097622826283116645
+    second: explosion-vector-8-bit-2-transparent_14
+  - first:
+      213: -8327402076813583252
+    second: explosion-vector-8-bit-2-transparent_15
+  - first:
+      213: -3859139576349288227
+    second: explosion-vector-8-bit-2-transparent_16
+  - first:
+      213: -6724883390574069668
+    second: explosion-vector-8-bit-2-transparent_17
+  - first:
+      213: 2120568843688853647
+    second: explosion-vector-8-bit-2-transparent_18
+  - first:
+      213: -179454561016502689
+    second: explosion-vector-8-bit-2-transparent_19
+  - first:
+      213: -7258876282052876808
+    second: explosion-vector-8-bit-2-transparent_20
+  - first:
+      213: -7956351112786937552
+    second: explosion-vector-8-bit-2-transparent_21
+  - first:
+      213: 6417433403671370764
+    second: explosion-vector-8-bit-2-transparent_22
+  - first:
+      213: 571620225009569018
+    second: explosion-vector-8-bit-2-transparent_23
+  - first:
+      213: -5114246408893394690
+    second: explosion-vector-8-bit-2-transparent_24
+  - first:
+      213: -5547947004221683174
+    second: explosion-vector-8-bit-2-transparent_25
+  - first:
+      213: -8763733957517117420
+    second: explosion-vector-8-bit-2-transparent_26
+  - first:
+      213: 8163975147406837460
+    second: explosion-vector-8-bit-2-transparent_27
+  - first:
+      213: -6332763466811671610
+    second: explosion-vector-8-bit-2-transparent_28
+  - first:
+      213: 1471110689691147146
+    second: explosion-vector-8-bit-2-transparent_29
+  - first:
+      213: 292787515783394775
+    second: explosion-vector-8-bit-2-transparent_30
+  - first:
+      213: 2405439713829786302
+    second: explosion-vector-8-bit-2-transparent_31
+  - first:
+      213: -774390607538723903
+    second: explosion-vector-8-bit-2-transparent_32
+  - first:
+      213: -4849947568961580919
+    second: explosion-vector-8-bit-2-transparent_33
+  - first:
+      213: -3059132833296872757
+    second: explosion-vector-8-bit-2-transparent_34
+  - first:
+      213: -7915520978676366414
+    second: explosion-vector-8-bit-2-transparent_35
+  - first:
+      213: 2473919939399891596
+    second: explosion-vector-8-bit-2-transparent_36
+  - first:
+      213: -8400857857693534966
+    second: explosion-vector-8-bit-2-transparent_37
+  - first:
+      213: 2483865499409971495
+    second: explosion-vector-8-bit-2-transparent_38
+  - first:
+      213: 577368478968727740
+    second: explosion-vector-8-bit-2-transparent_39
+  - first:
+      213: 6019440004487349305
+    second: explosion-vector-8-bit-2-transparent_40
+  - first:
+      213: 3312746064507113152
+    second: explosion-vector-8-bit-2-transparent_41
+  - first:
+      213: 1931337223095423312
+    second: explosion-vector-8-bit-2-transparent_42
+  - first:
+      213: 4601480715382165347
+    second: explosion-vector-8-bit-2-transparent_43
+  - first:
+      213: -7094799915876821683
+    second: explosion-vector-8-bit-2-transparent_44
+  - first:
+      213: -6617584722117706588
+    second: explosion-vector-8-bit-2-transparent_45
+  - first:
+      213: 342294100997134487
+    second: explosion-vector-8-bit-2-transparent_46
+  - first:
+      213: 6302780422960003729
+    second: explosion-vector-8-bit-2-transparent_47
+  - first:
+      213: -7743458236120494987
+    second: explosion-vector-8-bit-2-transparent_48
+  - first:
+      213: 4207256154254869758
+    second: explosion-vector-8-bit-2-transparent_49
+  - first:
+      213: -2175398706841491592
+    second: explosion-vector-8-bit-2-transparent_50
+  - first:
+      213: 8576916653441569642
+    second: explosion-vector-8-bit-2-transparent_51
+  - first:
+      213: 7751898240895148335
+    second: explosion-vector-8-bit-2-transparent_52
+  - first:
+      213: -510135773487347438
+    second: explosion-vector-8-bit-2-transparent_53
+  - first:
+      213: -4524711370591284055
+    second: explosion-vector-8-bit-2-transparent_54
+  - first:
+      213: -8390619652177833457
+    second: explosion-vector-8-bit-2-transparent_55
+  - first:
+      213: 3396809496701275564
+    second: explosion-vector-8-bit-2-transparent_56
+  - first:
+      213: 4029211830475401796
+    second: explosion-vector-8-bit-2-transparent_57
+  - first:
+      213: -2651153873859645702
+    second: explosion-vector-8-bit-2-transparent_58
+  - first:
+      213: -8001432329408854313
+    second: explosion-vector-8-bit-2-transparent_59
+  - first:
+      213: 2666414765328554400
+    second: explosion-vector-8-bit-2-transparent_60
+  - first:
+      213: 5682424888674722337
+    second: explosion-vector-8-bit-2-transparent_61
+  - first:
+      213: -8692297080546091491
+    second: explosion-vector-8-bit-2-transparent_62
+  - first:
+      213: -680670098406374893
+    second: explosion-vector-8-bit-2-transparent_63
+  - first:
+      213: 6514309979242865956
+    second: explosion-vector-8-bit-2-transparent_64
+  - first:
+      213: -133553154257613731
+    second: explosion-vector-8-bit-2-transparent_65
+  - first:
+      213: -8607941843416437431
+    second: explosion-vector-8-bit-2-transparent_66
+  - first:
+      213: -2748906402031222875
+    second: explosion-vector-8-bit-2-transparent_67
+  - first:
+      213: -4774938053473377362
+    second: explosion-vector-8-bit-2-transparent_68
+  - first:
+      213: -2908000859793924341
+    second: explosion-vector-8-bit-2-transparent_69
+  - first:
+      213: 3324415809103875085
+    second: explosion-vector-8-bit-2-transparent_70
+  - first:
+      213: 2804099478475855709
+    second: explosion-vector-8-bit-2-transparent_71
+  - first:
+      213: -138329035696278141
+    second: explosion-vector-8-bit-2-transparent_72
+  - first:
+      213: -9108970521711830823
+    second: explosion-vector-8-bit-2-transparent_73
+  - first:
+      213: 8708609091103379713
+    second: explosion-vector-8-bit-2-transparent_74
+  - first:
+      213: -7583951953095772051
+    second: explosion-vector-8-bit-2-transparent_75
+  - first:
+      213: 6832142906394235466
+    second: explosion-vector-8-bit-2-transparent_76
+  - first:
+      213: 8434904316625969561
+    second: explosion-vector-8-bit-2-transparent_77
+  - first:
+      213: 5037917365259286585
+    second: explosion-vector-8-bit-2-transparent_78
+  - first:
+      213: 1952570534645394219
+    second: explosion-vector-8-bit-2-transparent_79
+  - first:
+      213: -1164550949021621911
+    second: explosion-vector-8-bit-2-transparent_80
+  - first:
+      213: -776410774178027262
+    second: explosion-vector-8-bit-2-transparent_81
+  - first:
+      213: 9091492384361364613
+    second: explosion-vector-8-bit-2-transparent_82
+  - first:
+      213: -469253760590996210
+    second: explosion-vector-8-bit-2-transparent_83
+  - first:
+      213: -7524843934506037621
+    second: explosion-vector-8-bit-2-transparent_84
+  - first:
+      213: 8832535469767250498
+    second: explosion-vector-8-bit-2-transparent_85
+  - first:
+      213: 652169437730971857
+    second: explosion-vector-8-bit-2-transparent_86
+  - first:
+      213: 1401237864619223451
+    second: explosion-vector-8-bit-2-transparent_87
+  - first:
+      213: 4967678613698474370
+    second: explosion-vector-8-bit-2-transparent_88
+  - first:
+      213: 4888499438140744980
+    second: explosion-vector-8-bit-2-transparent_89
+  - first:
+      213: -7375560512365598093
+    second: explosion-vector-8-bit-2-transparent_90
+  - first:
+      213: -3566949408548721292
+    second: explosion-vector-8-bit-2-transparent_91
+  - first:
+      213: -7915286719534276387
+    second: explosion-vector-8-bit-2-transparent_92
+  - first:
+      213: -3710800728762141271
+    second: explosion-vector-8-bit-2-transparent_93
+  - first:
+      213: -1234623965139750501
+    second: explosion-vector-8-bit-2-transparent_94
+  - first:
+      213: -3896478871749711343
+    second: explosion-vector-8-bit-2-transparent_95
+  - first:
+      213: 2198208559593702720
+    second: explosion-vector-8-bit-2-transparent_96
+  - first:
+      213: 1537662675269260616
+    second: explosion-vector-8-bit-2-transparent_97
+  - first:
+      213: 6914441102382055502
+    second: explosion-vector-8-bit-2-transparent_98
+  - first:
+      213: 3702247721014723500
+    second: explosion-vector-8-bit-2-transparent_99
+  - first:
+      213: -5670890950256837564
+    second: explosion-vector-8-bit-2-transparent_100
+  - first:
+      213: 4128103626724522710
+    second: explosion-vector-8-bit-2-transparent_101
+  - first:
+      213: 6599656426632564438
+    second: explosion-vector-8-bit-2-transparent_102
+  - first:
+      213: 40294151630409731
+    second: explosion-vector-8-bit-2-transparent_103
+  - first:
+      213: -1903479653048677095
+    second: explosion-vector-8-bit-2-transparent_104
+  - first:
+      213: -243820121790842165
+    second: explosion-vector-8-bit-2-transparent_105
+  - first:
+      213: 9204517144514285650
+    second: explosion-vector-8-bit-2-transparent_106
+  - first:
+      213: -5011469349602051629
+    second: explosion-vector-8-bit-2-transparent_107
+  - first:
+      213: -3129805769167545576
+    second: explosion-vector-8-bit-2-transparent_108
+  - first:
+      213: -1764772748601886084
+    second: explosion-vector-8-bit-2-transparent_109
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e47ebf0cf9fcf94b87b5df90175251c
+      internalID: -2755405062778115043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 972e8d8e04b27e1429e867df8d394a3a
+      internalID: -4807882215885372462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b5921d0eae61049a7ed538e2da9a15
+      internalID: -2819771148760499198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb4982d2e58a864cac7fa3d54b71430
+      internalID: -1789327385831282281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6614a2119f8bc044e8d779b3c2e15de8
+      internalID: -1184420468386053705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 780
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19bdb11b3f25f0478072d0b0cd787e8
+      internalID: -3126747667575360278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcae2ba0dacaa1c46b5c7ccd72a87808
+      internalID: -1954251399183230525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_7
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34b0c616c59e5f4ca11c8def58f9b48
+      internalID: 8729703927213293443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bce19c5966d78048ac4e3de83b105ce
+      internalID: -7936870771512358863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_9
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d51838dd9b5e244a81010a98da21eb9
+      internalID: -4643049639561161841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bb75eb452681646b802d2c68e57848
+      internalID: -7197638356554402706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_11
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 650
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c503396e1dfa2419ca11c8e1def737
+      internalID: -3391010535194709873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae3820a30a05364186280160a0d42b5
+      internalID: 4609561770621944143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_13
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1087ec093db95c640922eed6c5ef2ef9
+      internalID: 2289893282601903599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_14
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b8b21a750ced0458a644f0236fdd04
+      internalID: 9097622826283116645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_15
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8743b3c1eaf519c45835d7afb04ff1a0
+      internalID: -8327402076813583252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_16
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dbb304839de17429d54bc41a453e43
+      internalID: -3859139576349288227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_17
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 520
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eb51f4037696a4390877856efec44f
+      internalID: -6724883390574069668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30bf07b9118e654791a6882979b015a
+      internalID: 2120568843688853647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_19
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013c6577c77243e4ea714e1211b7e97c
+      internalID: -179454561016502689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_20
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d9482fc1e5d734aa101de565555b54
+      internalID: -7258876282052876808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_21
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11d3ea4c32dad042a331698fbb68c42
+      internalID: -7956351112786937552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df51db3698459b84a9a0ff18ab0223cf
+      internalID: 6417433403671370764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_23
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 390
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1175fc5921ca25f43ae0b95cf01a5734
+      internalID: 571620225009569018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560dd1cd0d3a14540931fc771dacf1fc
+      internalID: -5114246408893394690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0e1afe8045fe845820ef6b9c5249d7
+      internalID: -5547947004221683174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_26
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354edb31d7c0f6d4b816d034ecd29965
+      internalID: -8763733957517117420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_27
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbfcc298810c7db4aaeea65abcd5c1c7
+      internalID: 8163975147406837460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ece718bf9e41984fa7856293d1c1e82
+      internalID: -6332763466811671610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_29
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 260
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b85a1cff66cc7b41ac7ae4e3ca1f060
+      internalID: 1471110689691147146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bf40e4e6c159f47a287e211175b2b7
+      internalID: 292787515783394775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6175e97e4dffbbe49ae289c2aa4d2f22
+      internalID: 2405439713829786302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2655040d6a1a2e4d960768b6277b898
+      internalID: -774390607538723903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 183df4bf14022a94ba625e62e66185da
+      internalID: -4849947568961580919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_34
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af867f5a21d6bc4ab0963a245ab8ab8
+      internalID: -3059132833296872757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_35
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 130
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b90901a6ba24443a049086dda5ff98
+      internalID: -7915520978676366414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d647d793b98875e4f81875c6e465e5ae
+      internalID: 2473919939399891596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_37
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bf87bd18f01ae4b8ab5022ee8deee3
+      internalID: -8400857857693534966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: explosion-vector-8-bit-2-transparent_38
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a37b7eba193424582d72849748f4f4
+      internalID: 2483865499409971495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1aedc2d220df72347bb8183f1ec7dae5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

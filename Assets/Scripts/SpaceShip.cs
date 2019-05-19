@@ -2,7 +2,7 @@
 using UnityEngine;
 
 
-public class SpaceShip : MonoBehaviour, IForcableObject
+public class SpaceShip : MonoBehaviour
 {
     public float minSpeed;
     public float maxSpeed;
@@ -15,8 +15,6 @@ public class SpaceShip : MonoBehaviour, IForcableObject
     private float speed;
     private Vector3 direction;
     private float rotation;
-
-    public Vector3 Position => transform.position;
 
     public void AddForce(Vector3 force)
     {

@@ -450,11 +450,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1127994863008621447, guid: 1688c226a6a142e41b5aed2b30456aa0,
-        type: 3}
-      propertyPath: m_Name
-      value: GameControl
-      objectReference: {fileID: 0}
     - target: {fileID: 1127994863008621441, guid: 1688c226a6a142e41b5aed2b30456aa0,
         type: 3}
       propertyPath: shipsDisplay
@@ -469,6 +464,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ships
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127994863008621447, guid: 1688c226a6a142e41b5aed2b30456aa0,
+        type: 3}
+      propertyPath: m_Name
+      value: GameControl
       objectReference: {fileID: 0}
     - target: {fileID: 1127994863008621440, guid: 1688c226a6a142e41b5aed2b30456aa0,
         type: 3}
@@ -838,7 +838,13 @@ PrefabInstance:
       propertyPath: sceneName
       value: Level1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+        type: 3}
+      propertyPath: gravity
+      value: 1.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9061502727093008218, guid: 68e7549cfe57ba441aec9dd8e07fb637, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 68e7549cfe57ba441aec9dd8e07fb637, type: 3}
 --- !u!1001 &7781964322218851005
 PrefabInstance:

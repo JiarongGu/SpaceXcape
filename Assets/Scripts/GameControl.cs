@@ -10,6 +10,7 @@ namespace Assets.Scripts
         public int ships;
         public Text shipsDisplay;
         public Text levelDisplay;
+        public GameBoundary gameBoundary;
 
         public string scenesName;
 

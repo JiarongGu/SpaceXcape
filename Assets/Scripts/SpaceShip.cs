@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Helpers;
+﻿using Assets.Scripts;
+using Assets.Scripts.Helpers;
 using UnityEngine;
 
 
@@ -6,8 +7,6 @@ public class SpaceShip : MonoBehaviour
 {
     public float minSpeed;
     public float maxSpeed;
-
-    public GameBoundary gameBoundary;
 
     public Vector3 position;
     public int enterPlanet;
@@ -92,7 +91,7 @@ public class SpaceShip : MonoBehaviour
 
     private bool WithInBoundary()
     {
-        var bounds = gameBoundary.GetComponent<Renderer>().bounds;
+        var bounds = FindObjectOfType<GameBoundary>().GetComponent<Renderer>().bounds;
         var max = bounds.max;
         var min = bounds.min;
         return !(position.y > max.y || position.x > max.x || position.y < min.y || position.x < min.x);

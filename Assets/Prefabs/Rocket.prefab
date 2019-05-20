@@ -126,9 +126,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minSpeed: 1
   maxSpeed: 20
-  gameBoundary: {fileID: 263029321093998358, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
+  gameControl: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
     type: 3}
   position: {x: 0, y: 0, z: 0}
   enterPlanet: 0
   expolsion: {fileID: 4788510310294127545, guid: bdb0b3a44a3b59f4fb1755b79308de58,
     type: 3}
+  speed: 0

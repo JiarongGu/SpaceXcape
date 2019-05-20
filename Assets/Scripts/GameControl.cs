@@ -3,32 +3,31 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Assets.Scripts
+
+public class GameControl : MonoBehaviour
 {
-    public class GameControl : MonoBehaviour
+    public int ships;
+    public Text shipsDisplay;
+    public Text levelDisplay;
+    public GameBoundary gameBoundary;
+    public Earth earth;
+
+    public string scenesName;
+
+    void Start()
     {
-        public int ships;
-        public Text shipsDisplay;
-        public Text levelDisplay;
-        public GameBoundary gameBoundary;
+        ships = 0;
+        levelDisplay.text = scenesName;
+    }
 
-        public string scenesName;
+    void Update()
+    {
+        if (shipsDisplay != null)
+            shipsDisplay.text = $"Ships: {ships}";
+    }
 
-        void Start()
-        {
-            ships = 0;
-            levelDisplay.text = scenesName;
-        }
-
-        void Update()
-        {
-            if (shipsDisplay != null)
-                shipsDisplay.text = $"Ships: {ships}";
-        }
-
-        public void LoadScene(string sceneName)
-        {
-            SceneManager.LoadScene(sceneName);
-        }
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

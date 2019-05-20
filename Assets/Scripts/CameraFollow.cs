@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Scripts;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameBoundary gameBoundary;
-
-    public Earth earth;
+    public GameControl gameControl;
 
     private Vector3 defaultPosition;
 
@@ -27,7 +26,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        var sapceShips = FindObjectsOfType<SpaceShip>().OrderBy(x => Vector3.Distance(x.transform.position, earth.Center));
+        var sapceShips = FindObjectsOfType<SpaceShip>().OrderBy(x => Vector3.Distance(x.transform.position, gameControl.earth.Center));
         var spaceShip = sapceShips.FirstOrDefault();
 
 
@@ -38,7 +37,7 @@ public class CameraFollow : MonoBehaviour
         }
 
         var position = spaceShip.transform.position;
-        var bounds = gameBoundary.GetComponent<Renderer>().bounds;
+        var bounds = gameControl.gameBoundary.GetComponent<Renderer>().bounds;
 
         transform.position = new Vector3(
             Mathf.Clamp(position.x, bounds.min.x + width / 2, bounds.max.x - width / 2),

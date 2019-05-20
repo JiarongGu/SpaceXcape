@@ -458,7 +458,7 @@ PrefabInstance:
     - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.99
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
         type: 3}
@@ -634,6 +634,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: scenesName
+      value: Guide Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: earth
+      value: 
+      objectReference: {fileID: 7680332589327035596}
+    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: gameBoundary
+      value: 
+      objectReference: {fileID: 263029322621961163}
     - target: {fileID: 5670949432523785999, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
         type: 3}
       propertyPath: m_Name
@@ -759,21 +774,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
-        type: 3}
-      propertyPath: scenesName
-      value: Guide Level
-      objectReference: {fileID: 0}
-    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
-        type: 3}
-      propertyPath: earth
-      value: 
-      objectReference: {fileID: 7680332589327035596}
-    - target: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
-        type: 3}
-      propertyPath: gameBoundary
-      value: 
-      objectReference: {fileID: 263029322621961163}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802b0c1970f73aa45b6b768cbbccfa0f, type: 3}
 --- !u!1001 &7680332589327035595

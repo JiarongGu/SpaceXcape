@@ -9,10 +9,14 @@ namespace Assets.Scripts
     {
         public int ships;
         public Text shipsDisplay;
+        public Text levelDisplay;
+
+        public string scenesName;
 
         void Start()
         {
             ships = 0;
+            levelDisplay.text = scenesName;
         }
 
         void Update()

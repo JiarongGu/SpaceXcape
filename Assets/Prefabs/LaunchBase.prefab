@@ -108,4 +108,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceShip: {fileID: 662072397005774405, guid: a68432925d6ec6247aa49fdfb58d96f8,
     type: 3}
-  gameControl: {fileID: 0}
+  gameControl: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+    type: 3}

@@ -7,12 +7,15 @@ public class SpaceShip : MonoBehaviour
     public float minSpeed;
     public float maxSpeed;
 
+    public GameBoundary gameBoundary;
+
     public Vector3 position;
     public int enterPlanet;
 
     public GameObject expolsion;
 
-    private float speed;
+    // program value
+    public float speed;
     private Vector3 direction;
     private float rotation;
 
@@ -35,6 +38,11 @@ public class SpaceShip : MonoBehaviour
             this.speed = maxSpeed;
 
         this.speed = speed;
+    }
+
+    public void SetSpeedByPower(float power)
+    {
+        this.speed = power * maxSpeed;
     }
 
     public void Destroy()
@@ -62,8 +70,8 @@ public class SpaceShip : MonoBehaviour
         // update game object
         transform.position = position;
         transform.eulerAngles = new Vector3(0, 0, GetRotation(movement));
-
-        if (!CheckBoundary()) Destroy();
+        
+        if (!WithInBoundary()) Destroy();
     }
 
     private Vector3 GetMovement(Vector3 position, Vector3 direction, float distance)
@@ -82,10 +90,11 @@ public class SpaceShip : MonoBehaviour
         return rotation;
     }
 
-    private bool CheckBoundary()
+    private bool WithInBoundary()
     {
-        var max = Camera.main.ViewportToWorldPoint(new Vector3(1, 1));
-        var min = max * -1;
+        var bounds = gameBoundary.GetComponent<Renderer>().bounds;
+        var max = bounds.max;
+        var min = bounds.min;
         return !(position.y > max.y || position.x > max.x || position.y < min.y || position.x < min.x);
     }
 

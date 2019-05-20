@@ -18,7 +18,7 @@ public class LaunchBase : MonoBehaviour, IPlanetCollider
     void Start()
     {
         PlanetCollider.Initalize(this);
-        
+
         // TODO - line color fix, currently not working
         lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.startColor = Color.red;
@@ -56,19 +56,21 @@ public class LaunchBase : MonoBehaviour, IPlanetCollider
         lineRenderer.enabled = false;
 
         var direction = (mousePosition - currentPosition).normalized;
-        var speed = Vector3.Distance(currentPosition, mousePosition);
+        var power = Vector3.Distance(currentPosition, mousePosition);
+        power = power > Constants.MaxPower ? Constants.MaxPower : power;
 
         if (direction != Vector3.zero)
         {
             var shipObject = Instantiate(spaceShip, currentPosition, Quaternion.identity);
-            shipObject.SetSpeed(speed);
+            shipObject.SetSpeedByPower(power / Constants.MaxPower);
             shipObject.SetDirection(direction);
 
             gameControl.ships += 1;
         }
     }
 
-    public bool WithinBase(Vector3 position) {
+    public bool WithinBase(Vector3 position)
+    {
         return Vector3.Distance(Center, new Vector3(position.x, position.y, 5)) < Radius;
     }
 }

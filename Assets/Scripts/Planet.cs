@@ -1,6 +1,4 @@
-﻿using Assets.Scripts.Helpers;
-using System;
-using System.Linq;
+﻿using System;
 using UnityEngine;
 
 public class Planet : MonoBehaviour, IPlanetCollider, IGravityProvider

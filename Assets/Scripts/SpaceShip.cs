@@ -1,6 +1,4 @@
-﻿using Assets.Scripts;
-using Assets.Scripts.Helpers;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class SpaceShip : MonoBehaviour

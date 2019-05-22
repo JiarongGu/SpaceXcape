@@ -2,24 +2,21 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.UI
+public class SceneButton : MonoBehaviour
 {
-    public class SceneButton : MonoBehaviour
+    public string sceneName;
+    public Button button;
+
+    void Start()
     {
-        public string sceneName;
-        public Button button;
-
-        void Start()
+        button.onClick.AddListener(() =>
         {
-            button.onClick.AddListener(() =>
-            {
-                SceneManager.LoadScene(sceneName);
-            });
-        }
+            SceneManager.LoadScene(sceneName);
+        });
+    }
 
-        void Update()
-        {
+    void Update()
+    {
 
-        }
     }
 }

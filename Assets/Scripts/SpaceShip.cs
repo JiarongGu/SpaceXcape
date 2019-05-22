@@ -25,7 +25,7 @@ public class SpaceShip : MonoBehaviour
 
     public void SetDirection(Vector3 direction)
     {
-        this.direction = new Vector3(direction.x, direction.y, Constants.PlanetLayer);
+        this.direction = new Vector3(direction.x, direction.y, Constants.PlanetLayer).normalized;
     }
 
     public void SetSpeed(float speed)

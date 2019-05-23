@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public interface IPlanetCollider
+public interface IObjectCollider
 {
     Vector3 Center { get; set; }
     Rigidbody Rigidbody { get; set; }
@@ -10,9 +10,9 @@ public interface IPlanetCollider
     GameObject gameObject { get; }
 }
 
-public static class PlanetCollider
+public static class ObjectCollider
 {
-    public static void Initalize(IPlanetCollider collider)
+    public static void Initalize(IObjectCollider collider)
     {
         var transform = collider.transform;
         var gameObject = collider.gameObject;
@@ -20,7 +20,7 @@ public static class PlanetCollider
 
         if (sphereCollider == null)
         {
-            throw new Exception("planet must has sphere collider as centre");
+            throw new Exception("object must has sphere collider as centre");
         }
 
         // planet and spaceship need to use z=5, as we develop this in 3D-mode

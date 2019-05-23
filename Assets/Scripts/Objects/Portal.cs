@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class Portal : MonoBehaviour, IPlanetCollider, IGravityProvider
+public class Portal : MonoBehaviour, IObjectCollider, IGravityProvider
 {
     public Portal linkedPortal;
 
@@ -20,7 +20,7 @@ public class Portal : MonoBehaviour, IPlanetCollider, IGravityProvider
     // Start is called before the first frame update
     void Start()
     {
-        PlanetCollider.Initalize(this);
+        ObjectCollider.Initalize(this);
         GravityProvider.Initalize(this, 1.2f);
     }
 

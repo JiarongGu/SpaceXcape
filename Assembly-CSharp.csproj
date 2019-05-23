@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\Helpers\Constants.cs" />
     <Compile Include="Assets\Scripts\Helpers\GravityProvider.cs" />
-    <Compile Include="Assets\Scripts\Helpers\PlanetCollider.cs" />
+    <Compile Include="Assets\Scripts\Helpers\ObjectCollider.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
     <Compile Include="Assets\Scripts\Objects\Planet.cs" />

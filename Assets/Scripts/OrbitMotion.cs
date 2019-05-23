@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class OrbitMotion : MonoBehaviour, IPlanetCollider
+public class OrbitMotion : MonoBehaviour, IObjectCollider
 {
     public Vector3 Center { get; set; }
 
@@ -11,7 +11,7 @@ public class OrbitMotion : MonoBehaviour, IPlanetCollider
     // Start is called before the first frame update
     void Start()
     {
-        PlanetCollider.Initalize(this);
+        ObjectCollider.Initalize(this);
     }
 
     // Update is called once per frame

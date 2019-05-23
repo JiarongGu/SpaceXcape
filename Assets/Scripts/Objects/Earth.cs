@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Earth : MonoBehaviour, IPlanetCollider, IGravityProvider
+public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
 {
     public string sceneName;
     public float gravity;
@@ -21,7 +22,7 @@ public class Earth : MonoBehaviour, IPlanetCollider, IGravityProvider
 
     void Start()
     {
-        PlanetCollider.Initalize(this);
+        ObjectCollider.Initalize(this);
         GravityProvider.Initalize(this, gravity);
     }
 
@@ -31,6 +32,11 @@ public class Earth : MonoBehaviour, IPlanetCollider, IGravityProvider
 
     private void OnCollisionEnter(Collision collision)
     {
-        SceneManager.LoadScene(sceneName);
+        var stations = FindObjectsOfType<Station>();
+
+        if (!stations.Any(x => x.Collected == false))
+        {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

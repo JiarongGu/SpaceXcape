@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class Planet : MonoBehaviour, IPlanetCollider, IGravityProvider
+public class Planet : MonoBehaviour, IObjectCollider, IGravityProvider
 {
     public float gravity;
 
@@ -19,7 +19,7 @@ public class Planet : MonoBehaviour, IPlanetCollider, IGravityProvider
 
     void Start()
     {
-        PlanetCollider.Initalize(this);
+        ObjectCollider.Initalize(this);
         GravityProvider.Initalize(this, gravity);
     }
 

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
     <Compile Include="Assets\Scripts\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\SpaceShip.cs" />
     <Compile Include="Assets\Scripts\UI\SceneButton.cs" />
     <Reference Include="Unity.Timeline.Editor">

@@ -20,10 +20,7 @@ public class SpaceShip : MonoBehaviour
     public virtual Vector3 Direction
     {
         get => direction;
-        set
-        {
-            direction = new Vector3(value.x, value.y, Constants.PlanetLayer).normalized;
-        }
+        set { direction = new Vector3(value.x, value.y, Constants.PlanetLayer); }
     }
 
     /// <summary>

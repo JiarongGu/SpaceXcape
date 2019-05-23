@@ -285,7 +285,7 @@ PrefabInstance:
     - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
         type: 3}
       propertyPath: sceneName
-      value: Level3
+      value: GameSelection
       objectReference: {fileID: 0}
     - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
         type: 3}

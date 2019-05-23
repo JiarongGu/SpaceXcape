@@ -41,6 +41,6 @@ public class CameraFollow : MonoBehaviour
             transform.position.z
         );
 
-        transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, Time.fixedDeltaTime);
+        transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, 0.2f);
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Station : MonoBehaviour, IObjectCollider
 {
@@ -12,9 +10,11 @@ public class Station : MonoBehaviour, IObjectCollider
 
     public bool Collected { get; private set; }
 
+    private Color defaultColor;
     // Start is called before the first frame update
     void Start()
     {
+        defaultColor = gameObject.GetComponent<SpriteRenderer>().color;
         ObjectCollider.Initalize(this);
     }
 
@@ -30,8 +30,8 @@ public class Station : MonoBehaviour, IObjectCollider
 
         if (spaceShip != null)
         {
-            Collected = true;
-            gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+            Collected = !Collected;
+            gameObject.GetComponent<SpriteRenderer>().color = Collected ? Color.white : defaultColor;
             Destroy(Instantiate(stationArraivedAnimation, transform.position, Quaternion.identity), 0.5f);
         }
     }

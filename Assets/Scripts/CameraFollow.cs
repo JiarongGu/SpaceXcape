@@ -35,10 +35,12 @@ public class CameraFollow : MonoBehaviour
         var position = spaceShip.transform.position;
         var bounds = gameControl.gameBoundary.GetComponent<Renderer>().bounds;
 
-        transform.position = new Vector3(
+        var newPosition = new Vector3(
             Mathf.Clamp(position.x, bounds.min.x + width / 2, bounds.max.x - width / 2),
-            Mathf.Clamp(position.y, bounds.min.y + height / 2, bounds.max.y - height /2),
+            Mathf.Clamp(position.y, bounds.min.y + height / 2, bounds.max.y - height / 2),
             transform.position.z
         );
+
+        transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, Time.fixedDeltaTime);
     }
 }

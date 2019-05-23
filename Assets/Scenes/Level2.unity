@@ -300,6 +300,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
+    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+        type: 3}
+      propertyPath: sceneName
+      value: Level1
+      objectReference: {fileID: 0}
     - target: {fileID: 1899615847966755011, guid: 68e7549cfe57ba441aec9dd8e07fb637,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -354,11 +359,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
-        type: 3}
-      propertyPath: sceneName
-      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e7549cfe57ba441aec9dd8e07fb637, type: 3}
@@ -536,12 +536,12 @@ PrefabInstance:
     - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.929
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.147
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
         type: 3}
@@ -587,6 +587,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749038993443190890, guid: ee8fbfadb50fb6442bc1ab38e3e77d18,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee8fbfadb50fb6442bc1ab38e3e77d18, type: 3}
@@ -796,6 +806,21 @@ PrefabInstance:
       propertyPath: earth
       value: 
       objectReference: {fileID: 507908376}
+    - target: {fileID: 7602870916893269214, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 158.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602870916893269214, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602870917572932771, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 158.79
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802b0c1970f73aa45b6b768cbbccfa0f, type: 3}
 --- !u!114 &1498155737 stripped

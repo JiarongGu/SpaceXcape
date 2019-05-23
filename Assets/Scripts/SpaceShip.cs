@@ -5,44 +5,75 @@ public class SpaceShip : MonoBehaviour
 {
     public float minSpeed;
     public float maxSpeed;
-
-    public Vector3 position;
-    public int enterPlanet;
-
     public GameObject expolsion;
 
     // program value
-    public float speed;
+    private float speed;
+    private Vector3 position;
     private Vector3 direction;
     private float rotation;
 
-    public void AddForce(Vector3 force)
+
+    /// <summary>
+    /// set/get spaceship direction
+    /// </summary>
+    public virtual Vector3 Direction
+    {
+        get => direction;
+        set
+        {
+            direction = new Vector3(value.x, value.y, Constants.PlanetLayer).normalized;
+        }
+    }
+
+    /// <summary>
+    /// set/get spaceship speed
+    /// </summary>
+    public virtual float Speed
+    {
+        get => speed;
+        set
+        {
+            if (value < minSpeed) speed = minSpeed;
+            if (value > maxSpeed) speed = maxSpeed;
+            speed = value;
+        }
+    }
+
+
+    /// <summary>
+    /// get/set spaceship position
+    /// </summary>
+    /// <param name="position"></param>
+    public virtual Vector3 Position
+    {
+        get => position;
+        set => position = value;
+    }
+
+
+    /// <summary>
+    ///  add force to direction
+    /// </summary>
+    /// <param name="force"></param>
+    public virtual void AddForce(Vector3 force)
     {
         direction = (direction + new Vector3(force.x, force.y)).normalized;
     }
 
-    public void SetDirection(Vector3 direction)
-    {
-        this.direction = new Vector3(direction.x, direction.y, Constants.PlanetLayer).normalized;
-    }
-
-    public void SetSpeed(float speed)
-    {
-        if (speed < minSpeed)
-            this.speed = minSpeed;
-
-        if (speed > maxSpeed)
-            this.speed = maxSpeed;
-
-        this.speed = speed;
-    }
-
-    public void SetSpeedByPower(float power)
+    /// <summary>
+    /// set speed by power factor float value 0 ~ 1
+    /// </summary>
+    /// <param name="power"></param>
+    public virtual void SetSpeedByPower(float power)
     {
         this.speed = power * maxSpeed;
     }
 
-    public void Destroy()
+    /// <summary>
+    /// destroy the spaceship
+    /// </summary>
+    public virtual void Destroy()
     {
         Destroy(Instantiate(expolsion, transform.position, Quaternion.identity), 1f);
         Destroy(gameObject);
@@ -67,7 +98,7 @@ public class SpaceShip : MonoBehaviour
         // update game object
         transform.position = position;
         transform.eulerAngles = new Vector3(0, 0, GetRotation(movement));
-        
+
         if (!WithInBoundary()) Destroy();
     }
 

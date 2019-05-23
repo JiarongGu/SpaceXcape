@@ -32,6 +32,7 @@ public static class GravityProvider
     private static void SpaceshipGravityAction(IGravityProvider gravityProvider)
     {
         var spaceShips = UnityEngine.Object.FindObjectsOfType<SpaceShip>();
+
         spaceShips
             .Select(x => (
                 spaceShip: x,

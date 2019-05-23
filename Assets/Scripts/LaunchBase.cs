@@ -61,7 +61,7 @@ public class LaunchBase : MonoBehaviour, IPlanetCollider
         {
             var shipObject = Instantiate(spaceShip, currentPosition, Quaternion.identity);
             shipObject.SetSpeedByPower(power / Constants.MaxPower);
-            shipObject.SetDirection(direction);
+            shipObject.Direction = direction;
 
             gameControl.ships += 1;
         }

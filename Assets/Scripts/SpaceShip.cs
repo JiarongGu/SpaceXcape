@@ -75,7 +75,7 @@ public class SpaceShip : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void Start()
+    protected virtual void Start()
     {
         transform.position = new Vector3(transform.position.x, transform.position.y, Constants.PlanetLayer);
         position = transform.position;

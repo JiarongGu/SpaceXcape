@@ -34,7 +34,6 @@ public class Portal : MonoBehaviour, IObjectCollider, IGravityProvider
 
         if (spaceship != null && linkedPortal != null) {
             spaceship.Position = linkedPortal.Center;
-            spaceship.Direction = spaceship.Direction * -1;
         }
     }
 }

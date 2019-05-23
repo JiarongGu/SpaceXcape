@@ -114,7 +114,7 @@ public class SpaceShip : MonoBehaviour
         return rotation;
     }
 
-    private bool WithInBoundary()
+    protected bool WithInBoundary()
     {
         var bounds = FindObjectOfType<GameBoundary>().GetComponent<Renderer>().bounds;
         var max = bounds.max;

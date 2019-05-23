@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-public class MoneyShip: SpaceShip
+﻿public class MoneyShip: SpaceShip
 {
     public override void Destroy()
     {
-        
+        if (!WithInBoundary()) {
+            base.Destroy();
+        }
     }
 }

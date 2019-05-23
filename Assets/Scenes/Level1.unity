@@ -360,6 +360,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Earth
       objectReference: {fileID: 0}
+    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+        type: 3}
+      propertyPath: gravity
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+        type: 3}
+      propertyPath: sceneName
+      value: Level2
+      objectReference: {fileID: 0}
     - target: {fileID: 1899615847966755011, guid: 68e7549cfe57ba441aec9dd8e07fb637,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -414,16 +424,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
-        type: 3}
-      propertyPath: gravity
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
-        type: 3}
-      propertyPath: sceneName
-      value: Level2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e7549cfe57ba441aec9dd8e07fb637, type: 3}
@@ -1099,6 +1099,11 @@ PrefabInstance:
       propertyPath: earth
       value: 
       objectReference: {fileID: 435230937}
+    - target: {fileID: 7602870917572932771, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 158.78998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 802b0c1970f73aa45b6b768cbbccfa0f, type: 3}
 --- !u!114 &7602870918115566968 stripped

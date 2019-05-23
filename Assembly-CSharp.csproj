@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\Helpers\GravityProvider.cs" />
     <Compile Include="Assets\Scripts\Helpers\PlanetCollider.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
+    <Compile Include="Assets\Scripts\MoneyShip.cs" />
     <Compile Include="Assets\Scripts\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />

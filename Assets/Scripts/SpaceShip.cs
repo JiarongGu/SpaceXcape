@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 
-
 public class SpaceShip : MonoBehaviour
 {
     public float minSpeed;

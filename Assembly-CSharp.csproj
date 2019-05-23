@@ -70,10 +70,10 @@
     <Compile Include="Assets\Scripts\Helpers\ObjectCollider.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
+    <Compile Include="Assets\Scripts\Objects\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Objects\Planet.cs" />
     <Compile Include="Assets\Scripts\Objects\Portal.cs" />
     <Compile Include="Assets\Scripts\Objects\Station.cs" />
-    <Compile Include="Assets\Scripts\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\MoneyShip.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\SpaceShip.cs" />
     <Compile Include="Assets\Scripts\UI\SceneButton.cs" />

@@ -36,7 +36,8 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
 
         if (!stations.Any(x => x.Collected == false))
         {
-            SceneManager.LoadScene(sceneName);
+            if (collision.gameObject.GetComponent<SpaceShip>() != null)
+                SceneManager.LoadScene(sceneName);
         }
     }
 }

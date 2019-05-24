@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        var sapceShips = FindObjectsOfType<SpaceShip>().OrderBy(x => Vector3.Distance(x.transform.position, gameControl.earth.Center));
+        var sapceShips = FindObjectsOfType<SpaceShip>().OrderBy(x => Vector3.Distance(x.transform.position, gameControl.earth.GetCenter()));
         var spaceShip = sapceShips.FirstOrDefault();
 
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5019294391195262322}
   - component: {fileID: 5019294391195262320}
   - component: {fileID: 5019294391195262321}
+  - component: {fileID: 3215640934794914243}
   m_Layer: 0
   m_Name: Planet4_Motion
   m_TagString: Untagged
@@ -107,4 +108,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.1
+  gravity: 2
+  radius: 0
+--- !u!114 &3215640934794914243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5019294391195262325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e603e02b39f715a44b629336f84fc5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   gravity: 2

@@ -1,9 +1,9 @@
 ﻿using System;
 using UnityEngine;
 
-public class meteorite : MonoBehaviour, IObjectCollider
+public class Meteorite : MonoBehaviour, IObjectCollider
 {
-    public meteorite crashMeteorite;
+    public Meteorite crashMeteorite;
 
     public Vector3 Center { get; set; }
 

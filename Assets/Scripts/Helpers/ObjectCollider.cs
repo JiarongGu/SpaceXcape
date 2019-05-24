@@ -1,35 +1,27 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public interface IObjectCollider
 {
-    Vector3 Center { get; set; }
     Rigidbody Rigidbody { get; set; }
-    float Radius { get; set; }
-    Transform transform { get; }
+
     GameObject gameObject { get; }
+
+    Transform transform { get; }
 }
 
 public static class ObjectCollider
 {
     public static void Initalize(IObjectCollider collider)
     {
-        var transform = collider.transform;
         var gameObject = collider.gameObject;
-        var sphereCollider = transform.GetComponent<SphereCollider>();
-
-        if (sphereCollider == null)
-        {
-            throw new Exception("object must has sphere collider as centre");
-        }
 
         // planet and spaceship need to use z=5, as we develop this in 3D-mode
         // planet and spaceship z-scale need to be 0, so we make 3D in 2D
-        transform.position = new Vector3(transform.position.x, transform.position.y, Constants.PlanetLayer);
-
-        // get centre and radius based on sphere collider
-        collider.Center = transform.position + sphereCollider.center;
-        collider.Radius = transform.localScale.x * sphereCollider.radius;
+        collider.transform.position = new Vector3(
+            collider.transform.position.x,
+            collider.transform.position.y,
+            Constants.PlanetLayer
+        );
 
         var rigibody = gameObject.GetComponent<Rigidbody>();
 
@@ -43,6 +35,5 @@ public static class ObjectCollider
         {
             collider.Rigidbody = rigibody;
         }
-
     }
 }

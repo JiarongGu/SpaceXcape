@@ -8,11 +8,7 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
     public string sceneName;
     public float gravity;
 
-    public Vector3 Center { get; set; }
-
     public Rigidbody Rigidbody { get; set; }
-
-    public float Radius { get; set; }
 
     public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
@@ -20,13 +16,20 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
 
     public Action SpaceShipGravityAction { get; set; }
 
+    public Func<Vector3> GetCenter { get; set; }
+
+    public Func<float> GetRadius { get; set; }
+
+    public SphereCollider sphereCollider { get; set; }
+
     void Start()
     {
         ObjectCollider.Initalize(this);
         GravityProvider.Initalize(this, gravity);
     }
 
-    void Update() {
+    void Update()
+    {
         SpaceShipGravityAction();
     }
 

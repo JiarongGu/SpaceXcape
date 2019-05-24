@@ -7,9 +7,7 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
 {
     public string sceneName;
     public float gravity;
-
-    public Rigidbody Rigidbody { get; set; }
-
+    
     public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
     public float GravityField { get; set; }
@@ -19,8 +17,6 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
     public Func<Vector3> GetCenter { get; set; }
 
     public Func<float> GetRadius { get; set; }
-
-    public SphereCollider sphereCollider { get; set; }
 
     void Start()
     {

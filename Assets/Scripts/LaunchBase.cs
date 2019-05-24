@@ -8,11 +8,7 @@ public class LaunchBase : MonoBehaviour, IObjectCollider
     private SpriteRenderer spriteRenderer;
     private LineRenderer lineRenderer;
     private Vector3 mousePosition;
-
-    public Vector3 Center { get; set; }
-    public Rigidbody Rigidbody { get; set; }
-    public float Radius { get; set; }
-
+    
     void Start()
     {
         ObjectCollider.Initalize(this);
@@ -65,10 +61,5 @@ public class LaunchBase : MonoBehaviour, IObjectCollider
 
             gameControl.ships += 1;
         }
-    }
-
-    public bool WithinBase(Vector3 position)
-    {
-        return Vector3.Distance(Center, new Vector3(position.x, position.y, 5)) < Radius;
     }
 }

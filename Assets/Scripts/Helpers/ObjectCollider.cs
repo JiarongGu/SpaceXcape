@@ -2,8 +2,6 @@
 
 public interface IObjectCollider
 {
-    Rigidbody Rigidbody { get; set; }
-
     GameObject gameObject { get; }
 
     Transform transform { get; }
@@ -28,12 +26,8 @@ public static class ObjectCollider
         if (rigibody == null)
         {
             // add rigid body for collision detection
-            collider.Rigidbody = gameObject.AddComponent<Rigidbody>();
-            collider.Rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-        }
-        else
-        {
-            collider.Rigidbody = rigibody;
+            rigibody = gameObject.AddComponent<Rigidbody>();
+            rigibody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
 }

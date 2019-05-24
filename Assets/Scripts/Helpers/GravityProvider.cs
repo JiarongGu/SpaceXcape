@@ -13,9 +13,7 @@ public interface IGravityProvider
     Func<Vector3> GetCenter { get; set; }
 
     Func<float> GetRadius { get; set; }
-
-    SphereCollider sphereCollider { get; set; }
-
+    
     Transform transform { get; }
 }
 
@@ -24,11 +22,13 @@ public static class GravityProvider
     public static void Initalize(IGravityProvider provider, float gravity)
     {
         var sphereCollider = provider.transform.GetComponent<SphereCollider>();
-        provider.sphereCollider = sphereCollider ?? throw new Exception("gravity provider must has sphere collider as centre");
+
+        if (sphereCollider == null)
+            throw new Exception("gravity provider must has sphere collider as centre");
 
         // get centre and radius based on sphere collider
-        provider.GetCenter = () => provider.transform.position + provider.sphereCollider.center;
-        provider.GetRadius = () => provider.transform.localScale.x * provider.sphereCollider.radius;
+        provider.GetCenter = () => provider.transform.position + sphereCollider.center;
+        provider.GetRadius = () => provider.transform.localScale.x * sphereCollider.radius;
 
         provider.GravityField = provider.GetRadius() * 3 * (gravity > 0 ? gravity : 1);
 

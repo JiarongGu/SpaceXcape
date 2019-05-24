@@ -1,16 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Meteorite : MonoBehaviour, IObjectCollider
 {
     public Meteorite crashMeteorite;
-
-    public Vector3 Center { get; set; }
-
-    public Rigidbody Rigidbody { get; set; }
-
-    public float Radius { get; set; }
-
+    
     // Start is called before the first frame update
     void Start()
     {

@@ -4,26 +4,16 @@ public class Station : MonoBehaviour, IObjectCollider
 {
     public GameObject stationArraivedAnimation;
 
-    public Vector3 Center { get; set; }
-    public Rigidbody Rigidbody { get; set; }
-    public float Radius { get; set; }
+    private Color defaultColor;
 
     public bool Collected { get; private set; }
-
-    private Color defaultColor;
-    // Start is called before the first frame update
+    
     void Start()
     {
         defaultColor = gameObject.GetComponent<SpriteRenderer>().color;
         ObjectCollider.Initalize(this);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         var spaceShip = collision.gameObject.GetComponent<SpaceShip>();

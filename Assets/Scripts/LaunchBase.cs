@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class LaunchBase : MonoBehaviour, IObjectCollider
+public class LaunchBase : MonoBehaviour
 {
     public SpaceShip spaceShip;
     public GameControl gameControl;
@@ -11,7 +11,7 @@ public class LaunchBase : MonoBehaviour, IObjectCollider
     
     void Start()
     {
-        ObjectCollider.Initalize(this);
+        ObjectFactory.CreateRigibody(this);
 
         // TODO - line color fix, currently not working
         lineRenderer = gameObject.AddComponent<LineRenderer>();

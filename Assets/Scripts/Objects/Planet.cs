@@ -1,29 +1,21 @@
 ﻿using System;
 using UnityEngine;
 
-public class Planet : MonoBehaviour, IObjectCollider, IGravityProvider
+public class Planet : MonoBehaviour
 {
     public float gravity;
-    
-    public Func<float> GetGravityField { get; set; }
 
-    public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
-
-    public Action SpaceShipGravityAction { get; set; }
-
-    public Func<Vector3> GetCenter { get; set; }
-
-    public Func<float> GetRadius { get; set; }
+    private GravityForce gravityForce;
 
     void Start()
     {
-        ObjectCollider.Initalize(this);
-        GravityProvider.Initalize(this, gravity);
+        ObjectFactory.CreateRigibody(this);
+        gravityForce = new GravityForce(this, gravity);
     }
 
     void Update()
     {
-        SpaceShipGravityAction();
+        gravityForce.Update();
     }
 
     private void OnCollisionEnter(Collision collision)

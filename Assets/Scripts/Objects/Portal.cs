@@ -1,30 +1,22 @@
 ﻿using System;
 using UnityEngine;
 
-public class Portal : MonoBehaviour, IObjectCollider, IGravityProvider
+public class Portal : MonoBehaviour
 {
     public Portal linkedPortal;
-    
-    public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
-    public Func<float> GetGravityField { get; set; }
-
-    public Func<Vector3> GetCenter { get; set; }
-
-    public Func<float> GetRadius { get; set; }
-    
-    public Action SpaceShipGravityAction { get; set; }
+    private GravityForce gravityForce;
 
     // Start is called before the first frame update
     void Start()
     {
-        ObjectCollider.Initalize(this);
-        GravityProvider.Initalize(this, 1.2f);
+        ObjectFactory.CreateRigibody(this);
+        gravityForce = new GravityForce(this, 1.2f);
     }
 
     void Update()
     {
-        SpaceShipGravityAction();
+        gravityForce.Update();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,7 +25,7 @@ public class Portal : MonoBehaviour, IObjectCollider, IGravityProvider
 
         if (spaceship != null && linkedPortal != null)
         {
-            spaceship.Position = linkedPortal.GetCenter();
+            spaceship.Position = linkedPortal.gravityForce.Center;
         }
     }
 }

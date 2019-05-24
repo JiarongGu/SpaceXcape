@@ -1,23 +1,16 @@
 ﻿using UnityEngine;
 
-public interface IObjectCollider
+public static class ObjectFactory
 {
-    GameObject gameObject { get; }
-
-    Transform transform { get; }
-}
-
-public static class ObjectCollider
-{
-    public static void Initalize(IObjectCollider collider)
+    public static void CreateRigibody(MonoBehaviour monoBehaviour)
     {
-        var gameObject = collider.gameObject;
+        var gameObject = monoBehaviour.gameObject;
 
         // planet and spaceship need to use z=5, as we develop this in 3D-mode
         // planet and spaceship z-scale need to be 0, so we make 3D in 2D
-        collider.transform.position = new Vector3(
-            collider.transform.position.x,
-            collider.transform.position.y,
+        monoBehaviour.transform.position = new Vector3(
+            monoBehaviour.transform.position.x,
+            monoBehaviour.transform.position.y,
             Constants.PlanetLayer
         );
 

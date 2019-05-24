@@ -1,19 +1,19 @@
 ﻿using UnityEngine;
 
-public class Station : MonoBehaviour, IObjectCollider
+public class Station : MonoBehaviour
 {
     public GameObject stationArraivedAnimation;
 
     private Color defaultColor;
 
     public bool Collected { get; private set; }
-    
+
     void Start()
     {
         defaultColor = gameObject.GetComponent<SpriteRenderer>().color;
-        ObjectCollider.Initalize(this);
+        ObjectFactory.CreateRigibody(this);
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         var spaceShip = collision.gameObject.GetComponent<SpaceShip>();

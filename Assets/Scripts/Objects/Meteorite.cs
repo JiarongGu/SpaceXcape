@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 
-public class Meteorite : MonoBehaviour, IObjectCollider
+public class Meteorite : MonoBehaviour
 {
     public Meteorite crashMeteorite;
     
     // Start is called before the first frame update
     void Start()
     {
-        ObjectCollider.Initalize(this);
+        ObjectFactory.CreateRigibody(this);
     }
 
     private void OnCollisionEnter(Collision collision)

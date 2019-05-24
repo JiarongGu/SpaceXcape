@@ -10,7 +10,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{4628A4AC-1153-7387-B261-944704F4E50D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Scripts\Helpers\ObjectCollider.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
-    <Compile Include="Assets\Scripts\Objects\meteorite.cs" />
+    <Compile Include="Assets\Scripts\Objects\Meteorites.cs" />
     <Compile Include="Assets\Scripts\Objects\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Objects\Planet.cs" />
     <Compile Include="Assets\Scripts\Objects\Portal.cs" />

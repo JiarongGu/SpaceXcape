@@ -2,8 +2,6 @@
 
 public class Meteorite : MonoBehaviour
 {
-    public Meteorite crashMeteorite;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +12,9 @@ public class Meteorite : MonoBehaviour
     {
         var spaceship = collision.gameObject.GetComponent<SpaceShip>();
 
-        if (spaceship != null && crashMeteorite != null)
+        if (spaceship != null)
         {
-            spaceship.Direction = new Vector3(1, 1) - spaceship.Direction;
+            spaceship.Direction = spaceship.Direction + spaceship.Position - transform.position;
         }
     }
 }

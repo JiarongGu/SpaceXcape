@@ -53,6 +53,6 @@ public static class GravityProvider
     private static float GetForce(float radius, float distance)
     {
         // force calculation based on newton + modified
-        return distance / Mathf.Sqrt(radius) / 1000;
+        return distance / Mathf.Sqrt(radius) / 25 * Time.fixedDeltaTime;
     }
 }

@@ -19,8 +19,8 @@ public class SpaceShip : MonoBehaviour
     public virtual Vector3 Direction
     {
         get => direction;
-        set { direction = new Vector3(value.x, value.y, Constants.PlanetLayer); }
-    }
+        set => direction = new Vector3(value.x, value.y, Constants.PlanetLayer);
+}
 
     /// <summary>
     /// set/get spaceship speed
@@ -44,7 +44,7 @@ public class SpaceShip : MonoBehaviour
     public virtual Vector3 Position
     {
         get => position;
-        set => position = value;
+        set => position = new Vector3(value.x, value.y, Constants.PlanetLayer);
     }
 
 
@@ -54,7 +54,7 @@ public class SpaceShip : MonoBehaviour
     /// <param name="force"></param>
     public virtual void AddForce(Vector3 force)
     {
-        direction = (direction + new Vector3(force.x, force.y)).normalized;
+        direction = new Vector3(direction.x + force.x, direction.y + force.y, direction.z).normalized;
     }
 
     /// <summary>
@@ -86,7 +86,7 @@ public class SpaceShip : MonoBehaviour
         if (direction == Vector3.zero)
             return;
 
-        var movement = GetMovement(transform.position, direction, speed * Time.fixedDeltaTime);
+        var movement = GetMovement(direction, speed * Time.fixedDeltaTime);
 
         // continues update for position and rotation
         position = position + movement;
@@ -98,13 +98,11 @@ public class SpaceShip : MonoBehaviour
         if (!WithInBoundary()) Destroy();
     }
 
-    private Vector3 GetMovement(Vector3 position, Vector3 direction, float distance)
+    private Vector3 GetMovement(Vector3 direction, float distance)
     {
-        var next = position + direction;
-        var r = Vector3.Distance(Vector3.zero, direction);
-        var y = distance * (next.y - position.y) / r + position.y;
-        var x = distance * (next.x - position.x) / r + position.x;
-        return new Vector3(x - position.x, y - position.y);
+        var factor = direction / Vector3.Distance(Vector3.zero, direction);
+        var movement = factor * distance;
+        return new Vector3(movement.x, movement.y);
     }
 
     private float GetRotation(Vector3 movement)

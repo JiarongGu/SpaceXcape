@@ -6,7 +6,7 @@ public interface IGravityProvider
 {
     Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
-    float GravityField { get; set; }
+    Func<float> GetGravityField { get; set; }
 
     Action SpaceShipGravityAction { get; set; }
 
@@ -30,14 +30,10 @@ public static class GravityProvider
         provider.GetCenter = () => provider.transform.position + sphereCollider.center;
         provider.GetRadius = () => provider.transform.localScale.x * sphereCollider.radius;
 
-        provider.GravityField = provider.GetRadius() * 3 * (gravity > 0 ? gravity : 1);
+        provider.GetGravityField = () => provider.GetRadius() * 3 * (gravity > 0 ? gravity : 1);
+        provider.GetGravityForce = (position, distance) => GetGravityForce(provider, position, distance);
 
-        provider.GetGravityForce = (position, distance) =>
-            GetGravityForce(provider, position, distance);
-
-        provider.SpaceShipGravityAction = () =>
-            SpaceshipGravityAction(provider);
-
+        provider.SpaceShipGravityAction = () => SpaceshipGravityAction(provider);
     }
 
     private static void SpaceshipGravityAction(IGravityProvider gravityProvider)
@@ -50,7 +46,7 @@ public static class GravityProvider
                 position: x.transform.position,
                 distance: Vector3.Distance(x.transform.position, gravityProvider.GetCenter())
              ))
-            .Where(x => x.distance < gravityProvider.GravityField).ToList()
+            .Where(x => x.distance < gravityProvider.GetGravityField()).ToList()
             .ForEach(x =>
                 x.spaceShip.AddForce(gravityProvider.GetGravityForce(x.position, x.distance))
             );

@@ -10,7 +10,7 @@ public class Earth : MonoBehaviour, IObjectCollider, IGravityProvider
     
     public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
-    public float GravityField { get; set; }
+    public Func<float> GetGravityField { get; set; }
 
     public Action SpaceShipGravityAction { get; set; }
 

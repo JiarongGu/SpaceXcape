@@ -5,7 +5,7 @@ public class Planet : MonoBehaviour, IObjectCollider, IGravityProvider
 {
     public float gravity;
     
-    public float GravityField { get; set; }
+    public Func<float> GetGravityField { get; set; }
 
     public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 

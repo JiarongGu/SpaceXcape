@@ -7,7 +7,7 @@ public class Portal : MonoBehaviour, IObjectCollider, IGravityProvider
     
     public Func<Vector3, float, Vector3> GetGravityForce { get; set; }
 
-    public float GravityField { get; set; }
+    public Func<float> GetGravityField { get; set; }
 
     public Func<Vector3> GetCenter { get; set; }
 

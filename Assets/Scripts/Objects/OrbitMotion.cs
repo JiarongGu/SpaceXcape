@@ -4,7 +4,6 @@ using UnityEngine;
 public class OrbitMotion : MonoBehaviour
 {
     public float speed;
-    public float gravity;
     public float radius;
 
     private Vector3 startPosition;

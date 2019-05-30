@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameSelection.unity
     guid: 4c9cb44abd551b94ab7a1078d3ff5e00
+  - enabled: 1
+    path: Assets/Scenes/Mason.unity
+    guid: eae951c23d63a074ab12eb54ba0dbf2e
   m_configObjects: {}

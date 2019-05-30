@@ -10,15 +10,17 @@ public class GameControl : MonoBehaviour
     public string scenesName;
 
     // Parent UI
-    public Plane planeGame;
-    public Plane planeScore;
+    public GameObject planeGame;
+    public GameObject planeScore;
 
     // Game UI
     public Text shipsDisplay;
     public Text levelDisplay;
 
     // Score UI
+    public Button nextButton;
 
+    private bool loadScene;
 
     void Start()
     {
@@ -26,16 +28,27 @@ public class GameControl : MonoBehaviour
         levelDisplay.text = scenesName;
     }
 
-
-
     void Update()
     {
         if (shipsDisplay != null)
             shipsDisplay.text = $"Ships: {ships}";
-    }
 
+        if (GameSelection.DisplayScore) {
+            planeGame.transform.localScale = Vector3.zero;
+            planeScore.transform.localScale = new Vector3(1, 1);
+
+            nextButton.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene(GameSelection.NextLevel);
+            });
+
+            GameSelection.DisplayScore = false;
+        }
+    }
+    
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        GameSelection.DisplayScore = true;
+        GameSelection.NextLevel = sceneName;
     }
 }

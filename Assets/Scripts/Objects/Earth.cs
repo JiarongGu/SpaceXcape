@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Earth : MonoBehaviour
 {
     public string sceneName;
     public float gravity;
+    public GameControl gameControl;
 
     private GravityForce gravityForce;
 
@@ -29,7 +29,7 @@ public class Earth : MonoBehaviour
         if (!stations.Any(x => x.Collected == false))
         {
             if (collision.gameObject.GetComponent<SpaceShip>() != null)
-                SceneManager.LoadScene(sceneName);
+                gameControl.LoadScene(sceneName);
         }
     }
 }

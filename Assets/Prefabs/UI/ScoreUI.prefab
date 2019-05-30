@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1630298133421145206}
   - component: {fileID: 2862274179575687494}
   - component: {fileID: 7118810345434609513}
+  - component: {fileID: 2827162694943863457}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +122,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2827162694943863457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025959304250568870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ad9a78a66f47a7409dbc911b0a412ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Home
+  button: {fileID: 7118810345434609513}
 --- !u!1 &2562631847365623518
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2225200870728797776}
   - component: {fileID: 1027993340828043794}
-  - component: {fileID: 5699839387534919970}
+  - component: {fileID: 4400677012846914348}
   m_Layer: 5
   m_Name: ScoreUI
   m_TagString: Untagged
@@ -326,7 +341,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3595314272805974585}
   m_CullTransparentMesh: 0
---- !u!114 &5699839387534919970
+--- !u!114 &4400677012846914348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -339,15 +354,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3cadf51baf70a2240a575af761343340, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -368,7 +383,7 @@ GameObject:
   - component: {fileID: 5097412042517770707}
   - component: {fileID: 4566985510776441976}
   m_Layer: 5
-  m_Name: Button
+  m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

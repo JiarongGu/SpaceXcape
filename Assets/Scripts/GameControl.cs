@@ -6,6 +6,7 @@ public class GameControl : MonoBehaviour
 {
     public int ships;
     public GameBoundary gameBoundary;
+    public LaunchBase launchBase;
     public Earth earth;
     public string scenesName;
 
@@ -39,7 +40,8 @@ public class GameControl : MonoBehaviour
         if (shipsDisplay != null)
             shipsDisplay.text = $"Ships: {ships}";
 
-        if (GameSelection.DisplayScore) {
+        if (GameSelection.DisplayScore)
+        {
             planeGame.transform.localScale = Vector3.zero;
             planeScore.transform.localScale = new Vector3(1, 1);
 
@@ -52,16 +54,23 @@ public class GameControl : MonoBehaviour
         }
     }
 
-    public void StartGuide() {
+    public void StartGuide()
+    {
+        launchBase.enabled = false;
+        planeGame.transform.localScale = Vector3.zero;
         cameraFollow.Follow<Earth>();
-        earth.StartBlink(2);
-        Invoke(nameof(FollowSpaceShip), 2);
+        earth.StartBlink(1.5f);
+
+        Invoke(nameof(StartGame), 1.5f);
     }
 
-    public void FollowSpaceShip() {
+    public void StartGame()
+    {
+        launchBase.enabled = true;
         cameraFollow.Follow<SpaceShip>();
+        planeGame.transform.localScale = new Vector3(1, 1);
     }
-    
+
     public void LoadScene(string sceneName)
     {
         GameSelection.DisplayScore = true;

@@ -6,6 +6,7 @@ public class Earth : MonoBehaviour
     public string sceneName;
     public float gravity;
     public GameControl gameControl;
+    public Blink blink;
 
     private GravityForce gravityForce;
 
@@ -14,12 +15,17 @@ public class Earth : MonoBehaviour
     void Start()
     {
         ObjectFactory.CreateRigibody(this);
+
         gravityForce = new GravityForce(this, gravity);
     }
 
     void Update()
     {
         gravityForce.Update();
+    }
+
+    public void StartBlink(float duration) {
+        blink.StartBlinking(duration);
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: sceneName
       value: Level2
       objectReference: {fileID: 0}
+    - target: {fileID: 2642465722027586887, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+        type: 3}
+      propertyPath: blink
+      value: 
+      objectReference: {fileID: 1434049605}
     - target: {fileID: 1899615847966755011, guid: 68e7549cfe57ba441aec9dd8e07fb637,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -573,6 +578,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68e7549cfe57ba441aec9dd8e07fb637, type: 3}
+--- !u!114 &1434049605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3362929227443451429, guid: 68e7549cfe57ba441aec9dd8e07fb637,
+    type: 3}
+  m_PrefabInstance: {fileID: 830531292}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b272206592a94c92ec027c5d02612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1440929077 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3838339410982376134, guid: 862dd9bdad5ce344abe861f2ef2fdc56,

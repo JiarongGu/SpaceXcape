@@ -1,9 +1,11 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
     public GameControl gameControl;
+    public bool autoFollow = true;
 
     private Vector3 defaultPosition;
 
@@ -12,6 +14,8 @@ public class CameraFollow : MonoBehaviour
     private float width;
 
     private Vector3 velocity = Vector3.zero;
+
+    private Type followObject = typeof(SpaceShip);
 
     void Start()
     {
@@ -22,17 +26,21 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        var spaceShip = FindObjectsOfType<SpaceShip>()
+        if (!autoFollow)
+            return;
+
+        var follow = FindObjectsOfType(followObject)
+            .Select(x => (MonoBehaviour)x)
             .OrderBy(x => Vector3.Distance(x.transform.position, gameControl.earth.Center))
             .FirstOrDefault();
 
-        if (spaceShip == null)
+        if (follow == null)
         {
             transform.position = Vector3.SmoothDamp(transform.position, defaultPosition, ref velocity, 0.5f);
             return;
         }
 
-        var position = spaceShip.transform.position;
+        var position = follow.transform.position;
         var bounds = gameControl.gameBoundary.GetComponent<Renderer>().bounds;
 
         var newPosition = new Vector3(
@@ -42,5 +50,9 @@ public class CameraFollow : MonoBehaviour
         );
 
         transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, 0.2f);
+    }
+
+    public void Follow<TObject>() where TObject: MonoBehaviour {
+        followObject = typeof(TObject);
     }
 }

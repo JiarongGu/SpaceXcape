@@ -20,12 +20,18 @@ public class GameControl : MonoBehaviour
     // Score UI
     public Button nextButton;
 
+    // components
+    public CameraFollow cameraFollow;
+
     private bool loadScene;
 
     void Start()
     {
         ships = 0;
         levelDisplay.text = scenesName;
+        cameraFollow = Camera.main.GetComponent<CameraFollow>();
+
+        StartGuide();
     }
 
     void Update()
@@ -44,6 +50,16 @@ public class GameControl : MonoBehaviour
 
             GameSelection.DisplayScore = false;
         }
+    }
+
+    public void StartGuide() {
+        cameraFollow.Follow<Earth>();
+        earth.StartBlink(2);
+        Invoke(nameof(FollowSpaceShip), 2);
+    }
+
+    public void FollowSpaceShip() {
+        cameraFollow.Follow<SpaceShip>();
     }
     
     public void LoadScene(string sceneName)

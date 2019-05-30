@@ -13,6 +13,7 @@ public class LaunchBase : MonoBehaviour
     {
         ObjectFactory.CreateRigibody(this);
         gameControl = FindObjectOfType<GameControl>();
+        UpdateMousePosition();
 
         // TODO - line color fix, currently not working
         lineRenderer = gameObject.AddComponent<LineRenderer>();
@@ -25,17 +26,23 @@ public class LaunchBase : MonoBehaviour
 
     void Update()
     {
-        var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition = new Vector3(position.x, position.y);
-
+        UpdateMousePosition();
         if (lineRenderer.enabled)
         {
             lineRenderer.SetPosition(1, mousePosition);
         }
     }
 
+    private void UpdateMousePosition() {
+        var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition = new Vector3(position.x, position.y);
+    }
+
     private void OnMouseDown()
     {
+        if (enabled == false)
+            return;
+
         if (lineRenderer == null)
             return;
 

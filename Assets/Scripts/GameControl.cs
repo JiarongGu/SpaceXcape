@@ -55,23 +55,7 @@ public class GameControl : MonoBehaviour
         earth.StartBlink(1.5f);
         Invoke(nameof(StartGame), 1.5f);
     }
-
-    void Update()
-    {
-        if (GameSelection.DisplayScore)
-        {
-            planeGame.transform.localScale = Vector3.zero;
-            planeScore.transform.localScale = new Vector3(1, 1);
-
-            nextButton.onClick.AddListener(() =>
-            {
-                SceneManager.LoadScene(GameSelection.NextLevel);
-            });
-
-            GameSelection.DisplayScore = false;
-        }
-    }
-
+    
     public void StartGuide()
     {
         launchBase.enabled = false;
@@ -88,7 +72,12 @@ public class GameControl : MonoBehaviour
 
     public void LoadScene(string sceneName)
     {
-        GameSelection.DisplayScore = true;
-        GameSelection.NextLevel = sceneName;
+        planeGame.transform.localScale = Vector3.zero;
+        planeScore.transform.localScale = new Vector3(1, 1);
+
+        nextButton.onClick.AddListener(() =>
+        {
+            SceneManager.LoadScene(sceneName);
+        });
     }
 }

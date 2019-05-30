@@ -4,17 +4,13 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public GameControl gameControl;
     public bool autoFollow = true;
 
+    private GameControl gameControl;
     private Vector3 defaultPosition;
-
     private float height;
-
     private float width;
-
     private Vector3 velocity = Vector3.zero;
-
     private Type followObject = typeof(SpaceShip);
 
     void Start()
@@ -22,6 +18,7 @@ public class CameraFollow : MonoBehaviour
         defaultPosition = transform.position;
         height = 2f * Camera.main.orthographicSize;
         width = height * Camera.main.aspect;
+        gameControl = FindObjectOfType<GameControl>();
     }
 
     void Update()

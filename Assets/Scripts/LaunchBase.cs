@@ -3,15 +3,16 @@
 public class LaunchBase : MonoBehaviour
 {
     public SpaceShip spaceShip;
-    public GameControl gameControl;
 
     private SpriteRenderer spriteRenderer;
     private LineRenderer lineRenderer;
+    private GameControl gameControl;
     private Vector3 mousePosition;
     
     void Start()
     {
         ObjectFactory.CreateRigibody(this);
+        gameControl = FindObjectOfType<GameControl>();
 
         // TODO - line color fix, currently not working
         lineRenderer = gameObject.AddComponent<LineRenderer>();

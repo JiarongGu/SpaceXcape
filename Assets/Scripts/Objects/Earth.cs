@@ -5,10 +5,10 @@ public class Earth : MonoBehaviour
 {
     public string sceneName;
     public float gravity;
-    public GameControl gameControl;
     public Blink blink;
 
     private GravityForce gravityForce;
+    private GameControl gameControl;
 
     public Vector3 Center => gravityForce.Center;
 
@@ -17,6 +17,7 @@ public class Earth : MonoBehaviour
         ObjectFactory.CreateRigibody(this);
 
         gravityForce = new GravityForce(this, gravity);
+        gameControl = FindObjectOfType<GameControl>();
     }
 
     void Update()

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -32,7 +33,10 @@ public class GameControl : MonoBehaviour
         levelDisplay.text = scenesName;
         cameraFollow = Camera.main.GetComponent<CameraFollow>();
 
+        // start game
         StartGuide();
+        earth.StartBlink(1.5f);
+        Invoke(nameof(StartGame), 1.5f);
     }
 
     void Update()
@@ -59,16 +63,13 @@ public class GameControl : MonoBehaviour
         launchBase.enabled = false;
         planeGame.transform.localScale = Vector3.zero;
         cameraFollow.Follow<Earth>();
-        earth.StartBlink(1.5f);
-
-        Invoke(nameof(StartGame), 1.5f);
     }
 
     public void StartGame()
     {
         launchBase.enabled = true;
-        cameraFollow.Follow<SpaceShip>();
         planeGame.transform.localScale = new Vector3(1, 1);
+        cameraFollow.Follow<SpaceShip>();
     }
 
     public void LoadScene(string sceneName)

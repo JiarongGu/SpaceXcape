@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Properties\GravityForce.cs" />
     <Compile Include="Assets\Scripts\Properties\ObjectFactory.cs" />
     <Compile Include="Assets\Scripts\Properties\OrbitMotion.cs" />
+    <Compile Include="Assets\Scripts\Properties\OrbitSpining.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\MoneyShip.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\SpaceShip.cs" />
     <Compile Include="Assets\Scripts\UI\SceneButton.cs" />

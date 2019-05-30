@@ -19,7 +19,13 @@ public class SpaceShip : MonoBehaviour
     public virtual Vector3 Direction
     {
         get => direction;
-        set => direction = new Vector3(value.x, value.y, Constants.PlanetLayer);
+        set {
+            var vector = new Vector3(value.x, value.y, Constants.PlanetLayer);
+            var distance = Vector3.Distance(Vector3.zero, vector);
+
+            direction = 1 / distance * vector;
+        }
+
 }
 
     /// <summary>

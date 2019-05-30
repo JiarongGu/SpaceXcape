@@ -58,7 +58,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 165879803
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -113,7 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f99245954459ece429af64b8b85ec26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ships: 1
   gameBoundary: {fileID: 0}
   launchBase: {fileID: 0}
   earth: {fileID: 0}
@@ -123,6 +122,7 @@ MonoBehaviour:
   shipsDisplay: {fileID: 6153713757473336337}
   levelDisplay: {fileID: 6153713759193302115}
   nextButton: {fileID: 4963180952163209058}
+  shipsCountDisplay: {fileID: 9014259016577339830}
   cameraFollow: {fileID: 0}
 --- !u!1001 &1529966004336643616
 PrefabInstance:
@@ -255,6 +255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638116038356574769, guid: f830129b2b2e7fc48b88da822cb55a23,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Ships: 6'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f830129b2b2e7fc48b88da822cb55a23, type: 3}
@@ -426,6 +431,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 475383985270657708, guid: e611918e0ce740c4bbefbb5c8d489d84,
+        type: 3}
+      propertyPath: m_text
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e611918e0ce740c4bbefbb5c8d489d84, type: 3}
 --- !u!1 &5360669696733360419 stripped
@@ -450,5 +460,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9014259016577339830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 475383985270657708, guid: e611918e0ce740c4bbefbb5c8d489d84,
+    type: 3}
+  m_PrefabInstance: {fileID: 8899662514833572634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

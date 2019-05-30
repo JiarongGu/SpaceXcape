@@ -109,8 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level0
   gravity: 1.5
-  gameControl: {fileID: 7602870917911030841, guid: 802b0c1970f73aa45b6b768cbbccfa0f,
-    type: 3}
+  gameControl: {fileID: 0}
   blink: {fileID: 3362929227443451429}
 --- !u!114 &3362929227443451429
 MonoBehaviour:

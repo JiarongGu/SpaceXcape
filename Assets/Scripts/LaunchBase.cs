@@ -35,6 +35,9 @@ public class LaunchBase : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (lineRenderer == null)
+            return;
+
         lineRenderer.enabled = true;
         lineRenderer.SetPosition(0, mousePosition);
         lineRenderer.SetPosition(1, mousePosition);
@@ -42,6 +45,9 @@ public class LaunchBase : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (lineRenderer == null)
+            return;
+
         if (lineRenderer.enabled == false)
             return;
 
@@ -59,7 +65,7 @@ public class LaunchBase : MonoBehaviour
             shipObject.SetSpeedByPower(power / Constants.MaxPower);
             shipObject.Direction = direction;
 
-            gameControl.ships += 1;
+            gameControl.Ships += 1;
         }
     }
 }

@@ -14,9 +14,9 @@ public class Portal : MonoBehaviour
         gravityForce = new GravityForce(this, 1.2f);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        gravityForce.Update();
+        gravityForce.FixedUpdate();
     }
 
     private void OnCollisionEnter(Collision collision)

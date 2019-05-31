@@ -20,9 +20,9 @@ public class Earth : MonoBehaviour
         gameControl = FindObjectOfType<GameControl>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        gravityForce.Update();
+        gravityForce.FixedUpdate();
     }
 
     public void StartBlink(float duration) {

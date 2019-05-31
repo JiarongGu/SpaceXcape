@@ -13,9 +13,9 @@ public class Planet : MonoBehaviour
         gravityForce = new GravityForce(this, gravity);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        gravityForce.Update();
+        gravityForce.FixedUpdate();
     }
 
     private void OnCollisionEnter(Collision collision)

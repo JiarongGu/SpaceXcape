@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
         gameControl = FindObjectOfType<GameControl>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (!autoFollow)
             return;

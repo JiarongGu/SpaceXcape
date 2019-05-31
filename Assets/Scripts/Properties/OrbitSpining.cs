@@ -6,7 +6,7 @@ public class OrbitSpining : MonoBehaviour
 
     private float rotation = 0f;
 
-    void Update()
+    void FixedUpdate()
     {
         transform.eulerAngles = new Vector3(0, 0, GetRotation());
     }

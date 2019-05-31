@@ -14,7 +14,7 @@ public class OrbitMotion : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (orbitProgress > 1)
             orbitProgress = 0;

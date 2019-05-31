@@ -25,7 +25,7 @@ public class GravityForce
 
     public float GravityField => Radius * GravityFactor * _gravity;
     
-    public void Update()
+    public void FixedUpdate()
     {
         var spaceShips = UnityEngine.Object.FindObjectsOfType<SpaceShip>();
 
@@ -49,6 +49,6 @@ public class GravityForce
     private float GetForce(float radius, float distance)
     {
         // force calculation based on newton + modified
-        return distance / Mathf.Sqrt(radius) / 15 * Time.fixedDeltaTime;
+        return distance / Mathf.Sqrt(radius) / 9 * Time.fixedDeltaTime;
     }
 }

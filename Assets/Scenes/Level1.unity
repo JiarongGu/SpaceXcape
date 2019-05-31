@@ -261,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 5019294391195262321, guid: 51ff0fce616f8a74d9cfca045dc48a5b,
         type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ff0fce616f8a74d9cfca045dc48a5b, type: 3}
@@ -340,7 +340,7 @@ PrefabInstance:
     - target: {fileID: 5019294391195262321, guid: 51ff0fce616f8a74d9cfca045dc48a5b,
         type: 3}
       propertyPath: speed
-      value: -0.2
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5019294391195262322, guid: 51ff0fce616f8a74d9cfca045dc48a5b,
         type: 3}
@@ -681,17 +681,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7781964324101870722, guid: 658afebeb1cfe764a9ea343d7ebdad4a,
-        type: 3}
-      propertyPath: gravity
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 7781964324101870847, guid: 658afebeb1cfe764a9ea343d7ebdad4a,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c305fe04faedd5048b076e5be8cbd28a,
         type: 3}
+    - target: {fileID: 7781964324101870722, guid: 658afebeb1cfe764a9ea343d7ebdad4a,
+        type: 3}
+      propertyPath: gravity
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 658afebeb1cfe764a9ea343d7ebdad4a, type: 3}
 --- !u!1001 &1300259546
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f988c61f2220c304fafde6c62e26ba81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 25
 --- !u!1001 &2013898927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1009,7 +1009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f988c61f2220c304fafde6c62e26ba81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -15
+  speed: -30
 --- !u!1001 &2026566566
 PrefabInstance:
   m_ObjectHideFlags: 0

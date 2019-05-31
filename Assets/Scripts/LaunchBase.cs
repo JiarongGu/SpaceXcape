@@ -5,10 +5,10 @@ public class LaunchBase : MonoBehaviour
     public SpaceShip spaceShip;
 
     private SpriteRenderer spriteRenderer;
-    private LineRenderer lineRenderer;
     private GameControl gameControl;
     private Vector3 mousePosition;
-    
+    private LineRenderer lineRenderer;
+
     void Start()
     {
         ObjectFactory.CreateRigibody(this);

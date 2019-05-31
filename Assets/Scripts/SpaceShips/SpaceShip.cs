@@ -92,7 +92,6 @@ public class SpaceShip : MonoBehaviour
     {
         // update game object
         transform.position = Vector3.SmoothDamp(position, transform.position, ref velocity, 0.1f);
-        transform.eulerAngles = new Vector3(0, 0, GetRotation(movement));
 
         if (!WithInBoundary()) Destroy();
     }
@@ -105,6 +104,11 @@ public class SpaceShip : MonoBehaviour
         // continues update for position and rotation
         movement = GetMovement(direction, speed * Time.fixedDeltaTime);
         position = position + movement;
+
+        var rotation = GetRotation(movement);
+
+        if (rotation != float.NaN)
+            transform.eulerAngles = new Vector3(0, 0, rotation);
     }
 
     private Vector3 GetMovement(Vector3 direction, float distance)

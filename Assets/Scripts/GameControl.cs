@@ -8,7 +8,8 @@ public class GameControl : MonoBehaviour
     public GameBoundary gameBoundary;
     public LaunchBase launchBase;
     public Earth earth;
-    public string scenesName;
+    public string sceneName;
+    public string nextScene;
 
     // Parent UI
     public GameObject planeGame;
@@ -46,7 +47,7 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         Ships = 0;
-        levelDisplay.text = scenesName;
+        levelDisplay.text = sceneName;
         cameraFollow = Camera.main.GetComponent<CameraFollow>();
 
         // start game
@@ -69,14 +70,14 @@ public class GameControl : MonoBehaviour
         cameraFollow.Follow<SpaceShip>();
     }
 
-    public void LoadScene(string sceneName)
+    public void FinishGame()
     {
         planeGame.transform.localScale = Vector3.zero;
         planeScore.transform.localScale = new Vector3(1, 1);
 
         nextButton.onClick.AddListener(() =>
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene(nextScene);
         });
     }
 }

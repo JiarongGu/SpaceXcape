@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Earth : MonoBehaviour
 {
-    public string sceneName;
     public float gravity;
     public Blink blink;
 
@@ -36,7 +35,7 @@ public class Earth : MonoBehaviour
         if (!stations.Any(x => x.Collected == false))
         {
             if (collision.gameObject.GetComponent<SpaceShip>() != null)
-                gameControl.LoadScene(sceneName);
+                gameControl.FinishGame();
         }
     }
 }

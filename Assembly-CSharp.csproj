@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\GameSelection.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
+    <Compile Include="Assets\Scripts\Objects\Explosion.cs" />
     <Compile Include="Assets\Scripts\Objects\Meteorite.cs" />
     <Compile Include="Assets\Scripts\Objects\Planet.cs" />
     <Compile Include="Assets\Scripts\Objects\Portal.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\Scripts\Properties\Blink.cs" />
     <Compile Include="Assets\Scripts\Properties\Constants.cs" />
     <Compile Include="Assets\Scripts\Properties\GravityForce.cs" />
+    <Compile Include="Assets\Scripts\Properties\ObjectAudio.cs" />
     <Compile Include="Assets\Scripts\Properties\ObjectFactory.cs" />
     <Compile Include="Assets\Scripts\Properties\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Properties\OrbitSpining.cs" />

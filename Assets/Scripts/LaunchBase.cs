@@ -1,17 +1,23 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class LaunchBase : MonoBehaviour
 {
     public SpaceShip spaceShip;
+    public AudioClip launchSound;
+    public GameControl arrow;
 
     private SpriteRenderer spriteRenderer;
     private GameControl gameControl;
     private Vector3 mousePosition;
     private LineRenderer lineRenderer;
+    private ObjectAudio lanuchSoundAudio;
 
     void Start()
     {
         ObjectFactory.CreateRigibody(this);
+        lanuchSoundAudio = new ObjectAudio(this, launchSound);
+
         gameControl = FindObjectOfType<GameControl>();
         UpdateMousePosition();
 
@@ -27,6 +33,7 @@ public class LaunchBase : MonoBehaviour
     void Update()
     {
         UpdateMousePosition();
+        
         if (lineRenderer.enabled)
         {
             lineRenderer.SetPosition(1, mousePosition);
@@ -69,10 +76,11 @@ public class LaunchBase : MonoBehaviour
 
         if (direction != Vector3.zero)
         {
+            lineRenderer.SetPositions(Array.Empty<Vector3>());
+            lanuchSoundAudio.AudioSource.Play(0);
             var shipObject = Instantiate(spaceShip, currentPosition, Quaternion.identity);
             shipObject.SetSpeedByPower(power / Constants.MaxPower);
             shipObject.Direction = direction;
-
             gameControl.Ships += 1;
         }
     }

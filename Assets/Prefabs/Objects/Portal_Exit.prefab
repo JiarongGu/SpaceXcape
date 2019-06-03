@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6833396469763956650}
   - component: {fileID: 6833396469763956655}
   m_Layer: 0
-  m_Name: portal2
+  m_Name: Portal_Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,3 +107,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linkedPortal: {fileID: 0}
+  portalActiveAnimation: {fileID: 8922982792491861006, guid: efe6646d7711ac840b5ee39ff6536b70,
+    type: 3}

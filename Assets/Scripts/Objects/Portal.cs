@@ -4,8 +4,10 @@ using UnityEngine;
 public class Portal : MonoBehaviour
 {
     public Portal linkedPortal;
+    public GameObject portalActiveAnimation;
 
     private GravityForce gravityForce;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,5 +29,8 @@ public class Portal : MonoBehaviour
         {
             spaceship.Position = linkedPortal.gravityForce.Center;
         }
+
+        if (portalActiveAnimation != null)
+            Destroy(Instantiate(portalActiveAnimation, transform.position, Quaternion.identity), 0.5f);
     }
 }

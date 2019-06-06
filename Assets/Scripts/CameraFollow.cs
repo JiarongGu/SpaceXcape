@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public bool autoFollow = true;
-
+    
     private GameControl gameControl;
     private Vector3 defaultPosition;
     private float height;
@@ -31,13 +31,12 @@ public class CameraFollow : MonoBehaviour
             .OrderBy(x => Vector3.Distance(x.transform.position, gameControl.earth.Center))
             .FirstOrDefault();
 
-        if (follow == null)
-        {
-            transform.position = Vector3.SmoothDamp(transform.position, defaultPosition, ref velocity, 0.5f);
-            return;
-        }
+        var position = follow != null ? follow.transform.position : defaultPosition;
+        UpdateCameraPosition(position);
+    }
 
-        var position = follow.transform.position;
+    private void UpdateCameraPosition(Vector3 position)
+    {
         var bounds = gameControl.gameBoundary.GetComponent<Renderer>().bounds;
 
         var newPosition = new Vector3(
@@ -49,7 +48,8 @@ public class CameraFollow : MonoBehaviour
         transform.position = Vector3.SmoothDamp(transform.position, newPosition, ref velocity, 0.2f);
     }
 
-    public void Follow<TObject>() where TObject: MonoBehaviour {
+    public void Follow<TObject>() where TObject : MonoBehaviour
+    {
         followObject = typeof(TObject);
     }
 }

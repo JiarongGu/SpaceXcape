@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GameControl.cs" />
     <Compile Include="Assets\Scripts\GameSelection.cs" />
     <Compile Include="Assets\Scripts\LaunchBase.cs" />
+    <Compile Include="Assets\Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
     <Compile Include="Assets\Scripts\Objects\Explosion.cs" />
     <Compile Include="Assets\Scripts\Objects\Meteorite.cs" />
@@ -82,7 +83,9 @@
     <Compile Include="Assets\Scripts\Properties\OrbitSpining.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\MoneyShip.cs" />
     <Compile Include="Assets\Scripts\SpaceShips\SpaceShip.cs" />
+    <Compile Include="Assets\Scripts\StartButton.cs" />
     <Compile Include="Assets\Scripts\UI\SceneButton.cs" />
+    <Compile Include="Assets\Scripts\UI\SelectionImage.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

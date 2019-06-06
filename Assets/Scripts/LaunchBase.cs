@@ -5,7 +5,7 @@ public class LaunchBase : MonoBehaviour
 {
     public SpaceShip spaceShip;
     public AudioClip launchSound;
-    public GameControl arrow;
+    public Animator spaceShipAnimation;
 
     private SpriteRenderer spriteRenderer;
     private GameControl gameControl;
@@ -28,21 +28,51 @@ public class LaunchBase : MonoBehaviour
         lineRenderer.startWidth = 0.1f;
         lineRenderer.endWidth = 0.1f;
         lineRenderer.enabled = false;
+        lineRenderer.sortingLayerName = "Line";
+
+        EnableSpaceShipAnimation(false);
     }
 
     void Update()
     {
         UpdateMousePosition();
-        
+
         if (lineRenderer.enabled)
         {
             lineRenderer.SetPosition(1, mousePosition);
+
+            var rotation = GetRotation(mousePosition - transform.position);
+            spaceShipAnimation.transform.eulerAngles = new Vector3(0, 0, rotation);
+        }
+    }
+
+    private void OnMouseEnter()
+    {
+        if (enabled) {
+            EnableSpaceShipAnimation(true);
+            spaceShipAnimation.transform.eulerAngles = new Vector3(0, 0, -45);
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        if (!lineRenderer.enabled)
+        {
+            EnableSpaceShipAnimation(false);
         }
     }
 
     private void UpdateMousePosition() {
         var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition = new Vector3(position.x, position.y);
+        spaceShipAnimation.transform.position = position;
+    }
+
+    private float GetRotation(Vector3 movement)
+    {
+        var offset = movement.y < 0 ? 180 : 0;
+        var rotation = offset + Mathf.Atan(movement.x / movement.y) * Mathf.Rad2Deg * -1;
+        return rotation;
     }
 
     private void OnMouseDown()
@@ -83,5 +113,13 @@ public class LaunchBase : MonoBehaviour
             shipObject.Direction = direction;
             gameControl.Ships += 1;
         }
+
+        EnableSpaceShipAnimation(false);
+    }
+
+    private void EnableSpaceShipAnimation(bool enable) {
+        spaceShipAnimation.enabled = enable;
+        spaceShipAnimation.GetComponent<Renderer>().enabled = enable;
+        Cursor.visible = !enable;
     }
 }

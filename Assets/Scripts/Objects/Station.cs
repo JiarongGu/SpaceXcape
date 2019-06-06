@@ -6,12 +6,20 @@ public class Station : MonoBehaviour
 
     private Color defaultColor;
 
-    public bool Collected { get; private set; }
+    public bool Collected { get; private set; } = true;
 
     void Start()
     {
-        defaultColor = gameObject.GetComponent<SpriteRenderer>().color;
+        defaultColor = new Color(0.15f, 1, 1);
         ObjectFactory.CreateRigibody(this);
+
+        Invoke(nameof(Initalize), 1.5f);
+    }
+
+    void Initalize() {
+        Collected = false;
+        Destroy(Instantiate(stationArraivedAnimation, transform.position, Quaternion.identity), 0.5f);
+        gameObject.GetComponent<SpriteRenderer>().color = defaultColor;
     }
 
     private void OnCollisionEnter(Collision collision)

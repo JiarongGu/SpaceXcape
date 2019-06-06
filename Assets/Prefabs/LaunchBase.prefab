@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3629206358748257294}
   - component: {fileID: 5743632790637910242}
   - component: {fileID: 5800158005099388372}
+  - component: {fileID: 6679921112679146601}
   m_Layer: 0
   m_Name: LaunchBase
   m_TagString: Untagged
@@ -111,6 +112,22 @@ MonoBehaviour:
     type: 3}
   launchSound: {fileID: 8300000, guid: fbc5b74690bed4c458dd988c6b2ec536, type: 3}
   spaceShipAnimation: {fileID: 6428509102424337368}
+  blink: {fileID: 6679921112679146601}
+--- !u!114 &6679921112679146601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2628510334957951009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3b272206592a94c92ec027c5d02612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interval: 1
+  startDelay: 0
+  defaultState: 0
 --- !u!1001 &6943916673840059928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,6 +139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpaceShipAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428808992570816, guid: 3bf4418daa2b8194581055f510695eaf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4137428808992570818, guid: 3bf4418daa2b8194581055f510695eaf,
         type: 3}
@@ -202,6 +224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137428808992570817, guid: 3bf4418daa2b8194581055f510695eaf,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf4418daa2b8194581055f510695eaf, type: 3}

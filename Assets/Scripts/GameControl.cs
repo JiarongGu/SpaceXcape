@@ -10,6 +10,8 @@ public class GameControl : MonoBehaviour
     public Earth earth;
     public string sceneName;
     public string nextScene;
+    public bool guide;
+
 
     // Parent UI
     public GameObject planeGame;
@@ -50,10 +52,12 @@ public class GameControl : MonoBehaviour
         levelDisplay.text = sceneName;
         cameraFollow = Camera.main.GetComponent<CameraFollow>();
 
-        // start game
-        StartGuide();
-        earth.StartBlink(1.5f);
-        Invoke(nameof(StartGame), 1.5f);
+        if (!guide) {
+            // start game
+            StartGuide();
+            earth.StartBlink(1.5f);
+            Invoke(nameof(StartGame), 1.5f);
+        }
     }
     
     public void StartGuide()

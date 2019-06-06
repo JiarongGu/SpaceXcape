@@ -6,12 +6,18 @@ public class LaunchBase : MonoBehaviour
     public SpaceShip spaceShip;
     public AudioClip launchSound;
     public Animator spaceShipAnimation;
+    public Blink blink;
 
     private SpriteRenderer spriteRenderer;
     private GameControl gameControl;
     private Vector3 mousePosition;
     private LineRenderer lineRenderer;
     private ObjectAudio lanuchSoundAudio;
+
+    public void StartBlink(float duration)
+    {
+        blink.StartBlinking(duration);
+    }
 
     void Start()
     {

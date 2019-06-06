@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\LevelSelection.cs" />
     <Compile Include="Assets\Scripts\Objects\Earth.cs" />
     <Compile Include="Assets\Scripts\Objects\Explosion.cs" />
+    <Compile Include="Assets\Scripts\Objects\Guide.cs" />
     <Compile Include="Assets\Scripts\Objects\Meteorite.cs" />
     <Compile Include="Assets\Scripts\Objects\Planet.cs" />
     <Compile Include="Assets\Scripts\Objects\Portal.cs" />
